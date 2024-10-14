@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: API Files
 site_url: https://example.com
 theme:
   name: material
@@ -25,6 +25,8 @@ theme:
         name: Light Mode
       primary: blue
       accent: deep orange
+repo_url: http://git@github.com:VoyagerTHU/apiFile.git
+repo_name: GitHub
 
 markdown_extensions:
   - attr_list
@@ -54,4 +56,4 @@ extra:
     - icon: simple/linkedin
       link: https://www.linkedin.com/
 
-copyright: Copyright © 2021 My Docs
+copyright: Copyright © 2024 Voyager
