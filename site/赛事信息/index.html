@@ -859,14 +859,11 @@
 </div>
 <h3 id="delete">DELETE</h3>
 <p>该 API 用于删除特定赛事，需要管理员权限。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">请求头</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">请求头</label><label for="__tabbed_6_2">成功响应</label><label for="__tabbed_6_3">错误响应</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <p>使用 DELETE 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 Authorization 字段设置为 JWT 令牌。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">成功响应</label><label for="__tabbed_7_2">错误响应</label></div>
-<div class="tabbed-content">
+</div>
 <div class="tabbed-block">
 <p>请求成功时，应当设置状态码为 200 OK，成功响应格式为：</p>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
@@ -898,7 +895,7 @@
 </span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="get_2">GET</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:3"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">请求体</label><label for="__tabbed_8_2">成功响应</label><label for="__tabbed_8_3">错误响应</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">请求体</label><label for="__tabbed_7_2">成功响应</label><label for="__tabbed_7_3">错误响应</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>本方法不需要提供任何请求体。</p>
@@ -933,7 +930,7 @@
 </div>
 </div>
 <h3 id="post_1">POST</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><input id="__tabbed_9_4" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">请求头</label><label for="__tabbed_9_2">请求体</label><label for="__tabbed_9_3">成功响应</label><label for="__tabbed_9_4">错误响应</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:4"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><input id="__tabbed_8_4" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">请求头</label><label for="__tabbed_8_2">请求体</label><label for="__tabbed_8_3">成功响应</label><label for="__tabbed_8_4">错误响应</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>使用 <code>POST</code> 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 <code>Authorization</code> 字段设置为 JWT 令牌。</p>
@@ -985,7 +982,7 @@
 </span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="get_3">GET</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">请求体</label><label for="__tabbed_10_2">成功响应</label><label for="__tabbed_10_3">错误响应</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:3"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">请求体</label><label for="__tabbed_9_2">成功响应</label><label for="__tabbed_9_3">错误响应</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>本方法不需要提供任何请求体。</p>
