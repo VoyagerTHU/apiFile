@@ -1,0 +1,1296 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF/">
+      
+      
+        <link rel="prev" href="../%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/">
+      
+      
+        <link rel="next" href="../%E9%A2%98%E5%BA%93%E4%BF%A1%E6%81%AF/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.45">
+    
+    
+      
+        <title>赛事信息 - API Files</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#urlcompetition" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="API Files" class="md-header__button md-logo" aria-label="API Files" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96m0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32m32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16m16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            API Files
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              赛事信息
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="http://git@github.com:VoyagerTHU/apiFile.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="API Files" class="md-nav__button md-logo" aria-label="API Files" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96m0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32m32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16m16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16"/></svg>
+
+    </a>
+    API Files
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="http://git@github.com:VoyagerTHU/apiFile.git" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台升级项目API文档
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    用户管理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    赛事信息
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    赛事信息
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetitionid" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition/{id}
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition/{id}">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetitionidmyai" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition/{id}/myai
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition/{id}/myai">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlevaluateai_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/evaluate/{ai_id}
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/evaluate/{ai_id}">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetitionidmyaiai_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition/{id}/myai/{ai_id}
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition/{id}/myai/{ai_id}">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A2%98%E5%BA%93%E4%BF%A1%E6%81%AF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    题库信息
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetitionid" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition/{id}
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition/{id}">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetitionidmyai" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition/{id}/myai
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition/{id}/myai">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlevaluateai_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/evaluate/{ai_id}
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/evaluate/{ai_id}">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urlcompetitionidmyaiai_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL/competition/{id}/myai/{ai_id}
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="URL/competition/{id}/myai/{ai_id}">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>赛事信息</h1>
+
+<h2 id="urlcompetition">URL/<code>competition</code></h2>
+<p>该API用于赛事列表信息获取</p>
+<p>该API接受以GET，其他方法请求均应当设置状态码为 405 Method Not Allowed，错误响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-3</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad method&quot;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="get">GET</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">请求体</label><label for="__tabbed_1_2">成功响应</label><label for="__tabbed_1_3">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本方法不需要提供任何请求体。</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 200 OK，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">[</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024 Summer Coding Challenge&quot;</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/images/competition1.png&quot;</span><span class="p">,</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-07-01T00:00:00Z&quot;</span><span class="p">,</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-07-31T23:59:59Z&quot;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nt">&quot;creator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Admin&quot;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Autumn AI Contest&quot;</span><span class="p">,</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/images/competition2.png&quot;</span><span class="p">,</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-10-01T00:00:00Z&quot;</span><span class="p">,</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-10-30T23:59:59Z&quot;</span><span class="p">,</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="nt">&quot;creator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OrganizerX&quot;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">]</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>若读取数据中途抛出错误，错误响应的状态码为 500 Internal Server Error，code 字段为 -4，info 字段尽量携带错误信息</p>
+</div>
+</div>
+</div>
+<h3 id="post">POST</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">请求头</label><label for="__tabbed_2_2">请求体</label><label for="__tabbed_2_3">成功响应</label><label for="__tabbed_2_4">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用 POST 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 Authorization 字段设置为 JWT 令牌。</p>
+</div>
+<div class="tabbed-block">
+<p>请求体的格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024 Summer Coding Challenge&quot;</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/images/competition1.png&quot;</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-07-01T00:00:00Z&quot;</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-07-31T23:59:59Z&quot;</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="nt">&quot;creator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Admin&quot;</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">&quot;questions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">201</span><span class="p">,</span><span class="mi">202</span><span class="p">]</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>其中<code>questions</code>代表赛事所用题目的编号</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 200 OK，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Succeed&quot;</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&quot;isCreate&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c1">// For example</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>这里 isCreate 字段是一个布尔值，表示这次请求是否在数据库中新增了一条游戏记录。换言之，若本次请求仅仅是更新了数据库中的某一条记录，则 isCreate 字段为 false。</p>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>若请求头中携带的 JWT 令牌无法通过验证或已经过期，错误响应状态码为 401 Unauthorized，code 字段为 2，info 字段为 "Invalid or expired JWT"</li>
+<li>若请求体中数据格式不满足格式规定，错误响应的状态码为 400 Bad Request，code 字段为 -2。info 字段的具体内容根据具体错误确定。<ul>
+<li>a.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="urlcompetitionid">URL/<code>competition/{id}</code></h2>
+<h3 id="get_1">GET</h3>
+<p>根据 id 获取特定赛事的详细信息，包括 Markdown 格式的赛事详情、题目 id 和排行榜信息。此接口不需要管理员权限，任何用户都可以访问。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">请求体</label><label for="__tabbed_3_2">成功响应</label><label for="__tabbed_3_3">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本方法不需要提供任何请求体。</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 200 OK，成功响应格式为：
+<div class="language-json highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024 Summer Coding Challenge&quot;</span><span class="p">,</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/images/competition1.png&quot;</span><span class="p">,</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-07-01T00:00:00Z&quot;</span><span class="p">,</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-07-31T23:59:59Z&quot;</span><span class="p">,</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nt">&quot;creator&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Admin&quot;</span><span class="p">,</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;## Event Overview\nThis is the 2024 Summer Coding Challenge...&quot;</span><span class="p">,</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">&quot;problems&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">101</span><span class="p">,</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w"> </span><span class="mi">103</span><span class="p">],</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="nt">&quot;leaderboard&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">        </span><span class="nt">&quot;rank&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">        </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">            </span><span class="nt">&quot;userid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">456</span><span class="p">,</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="w">            </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CoderA&quot;</span><span class="p">,</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">        </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">        </span><span class="nt">&quot;rank&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">        </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">            </span><span class="nt">&quot;userid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">478</span><span class="p">,</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">            </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CoderB&quot;</span><span class="p">,</span>
+</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="w">        </span><span class="nt">&quot;userId&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="w">        </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">280</span>
+</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="p">}</span>
+</span></code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>{
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    &quot;code&quot;: *,
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    &quot;info&quot;: &quot;[Some message]&quot;
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>}
+</span></code></pre></div>
+若读取数据中途抛出错误，错误响应的状态码为 500 Internal Server Error，code 字段为 -4，info 字段尽量携带错误信息</p>
+</div>
+</div>
+</div>
+<h3 id="put">PUT</h3>
+<p>该 API 用于修改赛事的详细信息，需要管理员权限。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">请求头</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<p>使用 PUT 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 Authorization 字段设置为 JWT 令牌。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">请求体</label><label for="__tabbed_5_2">成功响应</label><label for="__tabbed_5_3">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>请求体的格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Updated Competition Name&quot;</span><span class="p">,</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/images/updated_image.png&quot;</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="nt">&quot;start_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-08-01T00:00:00Z&quot;</span><span class="p">,</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">    </span><span class="nt">&quot;end_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-08-31T23:59:59Z&quot;</span><span class="p">,</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;## Updated event overview...&quot;</span><span class="p">,</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">    </span><span class="nt">&quot;questions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">101</span><span class="p">,</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w"> </span><span class="mi">103</span><span class="p">]</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>其中 questions 表示更新后的题目列表。</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 200 OK，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Update succeed&quot;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">{</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="p">,</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>若请求头中携带的 JWT 令牌无法通过验证或已经过期，错误响应状态码为 401 Unauthorized，code 字段为 2，info 字段为 "Invalid or expired JWT"。</li>
+<li>若请求体中数据格式不满足格式规定，错误响应的状态码为 400 Bad Request，code 字段为 -2。</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="delete">DELETE</h3>
+<p>该 API 用于删除特定赛事，需要管理员权限。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:3"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><input id="__tabbed_6_3" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">请求头</label><label for="__tabbed_6_2">成功响应</label><label for="__tabbed_6_3">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用 DELETE 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 Authorization 字段设置为 JWT 令牌。</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 200 OK，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Delete succeed&quot;</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="p">}</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="p">,</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>若请求头中携带的 JWT 令牌无法通过验证或已经过期，错误响应状态码为 401 Unauthorized，code 字段为 2，info 字段为 "Invalid or expired JWT"。</li>
+<li>若请求的 id 对应的赛事不存在，错误响应状态码为 404 Not Found，code 字段为 -1，info 字段为 "Competition not found"。</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="urlcompetitionidmyai">URL/<code>competition/{id}/myai</code></h2>
+<p>该 API 用于获取特定赛事中用户历史提交的所有 AI 列表。</p>
+<p>该 API 接受 <code>GET</code> 请求，其他方法请求均应当设置状态码为 <code>405 Method Not Allowed</code>，错误响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">{</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-3</span><span class="p">,</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad method&quot;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="get_2">GET</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:3"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><input id="__tabbed_7_3" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">请求体</label><label for="__tabbed_7_2">成功响应</label><label for="__tabbed_7_3">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本方法不需要提供任何请求体。</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 <code>200 OK</code>，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">[</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">        </span><span class="nt">&quot;ai_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">        </span><span class="nt">&quot;ai_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI Bot 1&quot;</span><span class="p">,</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">        </span><span class="nt">&quot;api&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/api/ai/1&quot;</span><span class="p">,</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">        </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">95</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">    </span><span class="p">},</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">        </span><span class="nt">&quot;ai_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">        </span><span class="nt">&quot;ai_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI Bot 2&quot;</span><span class="p">,</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">        </span><span class="nt">&quot;api&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/api/ai/2&quot;</span><span class="p">,</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w">        </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">88</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="p">]</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="p">,</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>若读取数据中途抛出错误，错误响应的状态码为 <code>500 Internal Server Error</code>，code 字段为 <code>-4</code>，info 字段尽量携带错误信息。</p>
+</div>
+</div>
+</div>
+<h3 id="post_1">POST</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:4"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><input id="__tabbed_8_3" name="__tabbed_8" type="radio" /><input id="__tabbed_8_4" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">请求头</label><label for="__tabbed_8_2">请求体</label><label for="__tabbed_8_3">成功响应</label><label for="__tabbed_8_4">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用 <code>POST</code> 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 <code>Authorization</code> 字段设置为 JWT 令牌。</p>
+</div>
+<div class="tabbed-block">
+<p>请求体的格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">{</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="nt">&quot;ai_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;New AI Bot&quot;</span><span class="p">,</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="nt">&quot;api&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.com/api/new-ai&quot;</span><span class="p">,</span><span class="w"> </span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li><code>ai_name</code>: 新建 AI 的名称</li>
+<li><code>api</code>: AI 的接口地址</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 <code>200 OK</code>，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI created successfully&quot;</span><span class="p">,</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="nt">&quot;ai_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li><code>ai_id</code>: 新生成的 AI 的唯一标识符。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">{</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="p">,</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>若请求头中携带的 JWT 令牌无法通过验证或已经过期，错误响应状态码为 <code>401 Unauthorized</code>，code 字段为 <code>2</code>，info 字段为 <code>"Invalid or expired JWT"</code>。</li>
+<li>若请求体中数据格式不满足格式规定，错误响应的状态码为 <code>400 Bad Request</code>，code 字段为 <code>-2</code>，info 字段根据具体错误确定。</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="urlevaluateai_id">URL/<code>evaluate/{ai_id}</code></h2>
+<h3 id="post_2">POST</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:4"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><input id="__tabbed_9_3" name="__tabbed_9" type="radio" /><input id="__tabbed_9_4" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">请求头</label><label for="__tabbed_9_2">请求体</label><label for="__tabbed_9_3">成功响应</label><label for="__tabbed_9_4">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>使用 <code>POST</code> 方法请求该 API 时需要携带 JWT 令牌验证身份。请求头需要将 <code>Authorization</code> 字段设置为 JWT 令牌。</p>
+</div>
+<div class="tabbed-block">
+<p>请求体的格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">{</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">    </span><span class="nt">&quot;ai_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;New AI Bot&quot;</span><span class="p">,</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="nt">&quot;api&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;www.whatever.com&quot;</span><span class="p">,</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span><span class="nt">&quot;codes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">            </span><span class="nt">&quot;question_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">// 问题的唯一标识符</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">            </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w">       </span><span class="c1">// 代码内容</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">            </span><span class="nt">&quot;question_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;int&quot;</span><span class="p">,</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">            </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">        </span><span class="c1">// 可以有多个代码对象</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li><code>ai_name</code>: 新建 AI 的名称</li>
+<li><code>api</code>: AI 的接口地址</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 <code>200 OK</code>，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="p">{</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI created successfully&quot;</span><span class="p">,</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">    </span><span class="nt">&quot;ai_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li><code>ai_id</code>: 新生成的 AI 的唯一标识符。</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">{</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="p">,</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<ul>
+<li>若请求头中携带的 JWT 令牌无法通过验证或已经过期，错误响应状态码为 <code>401 Unauthorized</code>，code 字段为 <code>2</code>，info 字段为 <code>"Invalid or expired JWT"</code>。</li>
+<li>若请求体中数据格式不满足格式规定，错误响应的状态码为 <code>400 Bad Request</code>，code 字段为 <code>-2</code>，info 字段根据具体错误确定。</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="urlcompetitionidmyaiai_id">URL/<code>competition/{id}/myai/{ai_id}</code></h2>
+<p>该 API 用于获取特定 AI 的详细信息，包括总得分和该 AI 在每一个小题目中的详细评测信息。</p>
+<p>该 API 接受 <code>GET</code> 请求，其他方法请求均应当设置状态码为 <code>405 Method Not Allowed</code>，错误响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">{</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-3</span><span class="p">,</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bad method&quot;</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="get_3">GET</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:3"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><input id="__tabbed_10_3" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">请求体</label><label for="__tabbed_10_2">成功响应</label><label for="__tabbed_10_3">错误响应</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>本方法不需要提供任何请求体。</p>
+</div>
+<div class="tabbed-block">
+<p>请求成功时，应当设置状态码为 <code>200 OK</code>，成功响应格式为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">{</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">    </span><span class="nt">&quot;ai_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">    </span><span class="nt">&quot;ai_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AI Bot 1&quot;</span><span class="p">,</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">    </span><span class="nt">&quot;total_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">95</span><span class="p">,</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">    </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pending&quot;</span><span class="p">,</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">    </span><span class="nt">&quot;details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">            </span><span class="nt">&quot;problem_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">101</span><span class="p">,</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">            </span><span class="nt">&quot;problem_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Problem A&quot;</span><span class="p">,</span>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">            </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Wrong Answer&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//如果这里是 Compile Error 则没有 testcase_details</span>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">            </span><span class="nt">&quot;ai_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;def solve(): return 42&quot;</span><span class="p">,</span>
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">            </span><span class="nt">&quot;oj_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="w">            </span><span class="nt">&quot;testcase_details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="w">                </span><span class="p">{</span>
+</span><span id="__span-23-15"><a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="w">                    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-23-16"><a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="w">                    </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Time Limit Exceeded&quot;</span><span class="p">,</span>
+</span><span id="__span-23-17"><a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="w">                    </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-23-18"><a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="w">                    </span><span class="nt">&quot;time_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+</span><span id="__span-23-19"><a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a><span class="w">                    </span><span class="nt">&quot;memory_kb&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">52</span><span class="p">,</span>
+</span><span id="__span-23-20"><a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-23-21"><a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a><span class="w">                </span><span class="p">{</span>
+</span><span id="__span-23-22"><a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a><span class="w">                    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-23-23"><a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a><span class="w">                    </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Time Limit Exceeded&quot;</span><span class="p">,</span>
+</span><span id="__span-23-24"><a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a><span class="w">                    </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-23-25"><a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a><span class="w">                    </span><span class="nt">&quot;time_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+</span><span id="__span-23-26"><a id="__codelineno-23-26" name="__codelineno-23-26" href="#__codelineno-23-26"></a><span class="w">                    </span><span class="nt">&quot;memory_kb&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">52</span><span class="p">,</span>
+</span><span id="__span-23-27"><a id="__codelineno-23-27" name="__codelineno-23-27" href="#__codelineno-23-27"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-23-28"><a id="__codelineno-23-28" name="__codelineno-23-28" href="#__codelineno-23-28"></a><span class="w">            </span><span class="p">]</span>
+</span><span id="__span-23-29"><a id="__codelineno-23-29" name="__codelineno-23-29" href="#__codelineno-23-29"></a><span class="w">        </span><span class="p">},</span>
+</span><span id="__span-23-30"><a id="__codelineno-23-30" name="__codelineno-23-30" href="#__codelineno-23-30"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-23-31"><a id="__codelineno-23-31" name="__codelineno-23-31" href="#__codelineno-23-31"></a><span class="w">            </span><span class="nt">&quot;problem_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span>
+</span><span id="__span-23-32"><a id="__codelineno-23-32" name="__codelineno-23-32" href="#__codelineno-23-32"></a><span class="w">            </span><span class="nt">&quot;problem_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Problem B&quot;</span><span class="p">,</span>
+</span><span id="__span-23-33"><a id="__codelineno-23-33" name="__codelineno-23-33" href="#__codelineno-23-33"></a><span class="w">            </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Accepted&quot;</span><span class="p">,</span>
+</span><span id="__span-23-34"><a id="__codelineno-23-34" name="__codelineno-23-34" href="#__codelineno-23-34"></a><span class="w">            </span><span class="nt">&quot;ai_code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;def solve(): return 24&quot;</span><span class="p">,</span>
+</span><span id="__span-23-35"><a id="__codelineno-23-35" name="__codelineno-23-35" href="#__codelineno-23-35"></a><span class="w">            </span><span class="nt">&quot;oj_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-23-36"><a id="__codelineno-23-36" name="__codelineno-23-36" href="#__codelineno-23-36"></a><span class="w">            </span><span class="nt">&quot;testcase_details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-23-37"><a id="__codelineno-23-37" name="__codelineno-23-37" href="#__codelineno-23-37"></a><span class="w">                </span><span class="p">{</span>
+</span><span id="__span-23-38"><a id="__codelineno-23-38" name="__codelineno-23-38" href="#__codelineno-23-38"></a><span class="w">                    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-23-39"><a id="__codelineno-23-39" name="__codelineno-23-39" href="#__codelineno-23-39"></a><span class="w">                    </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Time Limit Exceeded&quot;</span><span class="p">,</span>
+</span><span id="__span-23-40"><a id="__codelineno-23-40" name="__codelineno-23-40" href="#__codelineno-23-40"></a><span class="w">                    </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-23-41"><a id="__codelineno-23-41" name="__codelineno-23-41" href="#__codelineno-23-41"></a><span class="w">                    </span><span class="nt">&quot;time_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+</span><span id="__span-23-42"><a id="__codelineno-23-42" name="__codelineno-23-42" href="#__codelineno-23-42"></a><span class="w">                    </span><span class="nt">&quot;memory_kb&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">52</span><span class="p">,</span>
+</span><span id="__span-23-43"><a id="__codelineno-23-43" name="__codelineno-23-43" href="#__codelineno-23-43"></a><span class="w">                </span><span class="p">},</span>
+</span><span id="__span-23-44"><a id="__codelineno-23-44" name="__codelineno-23-44" href="#__codelineno-23-44"></a><span class="w">                </span><span class="p">{</span>
+</span><span id="__span-23-45"><a id="__codelineno-23-45" name="__codelineno-23-45" href="#__codelineno-23-45"></a><span class="w">                    </span><span class="nt">&quot;case_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+</span><span id="__span-23-46"><a id="__codelineno-23-46" name="__codelineno-23-46" href="#__codelineno-23-46"></a><span class="w">                    </span><span class="nt">&quot;state&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Time Limit Exceeded&quot;</span><span class="p">,</span>
+</span><span id="__span-23-47"><a id="__codelineno-23-47" name="__codelineno-23-47" href="#__codelineno-23-47"></a><span class="w">                    </span><span class="nt">&quot;score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-23-48"><a id="__codelineno-23-48" name="__codelineno-23-48" href="#__codelineno-23-48"></a><span class="w">                    </span><span class="nt">&quot;time_ms&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+</span><span id="__span-23-49"><a id="__codelineno-23-49" name="__codelineno-23-49" href="#__codelineno-23-49"></a><span class="w">                    </span><span class="nt">&quot;memory_kb&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">52</span><span class="p">,</span>
+</span><span id="__span-23-50"><a id="__codelineno-23-50" name="__codelineno-23-50" href="#__codelineno-23-50"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-23-51"><a id="__codelineno-23-51" name="__codelineno-23-51" href="#__codelineno-23-51"></a><span class="w">            </span><span class="p">]</span>
+</span><span id="__span-23-52"><a id="__codelineno-23-52" name="__codelineno-23-52" href="#__codelineno-23-52"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-23-53"><a id="__codelineno-23-53" name="__codelineno-23-53" href="#__codelineno-23-53"></a><span class="w">    </span><span class="p">]</span>
+</span><span id="__span-23-54"><a id="__codelineno-23-54" name="__codelineno-23-54" href="#__codelineno-23-54"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>details.status的格式可能为</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Compile Error  // 不会出现在测试点结果中
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>Accepted
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>Wrong Answer
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>Runtime Error
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>Time Limit Exceeded
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>Memory Limit Exceeded
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>System Error
+</span></code></pre></div>
+尤其注意Compile Error则没有testcase_details的具体信息</p>
+</div>
+<div class="tabbed-block">
+<p>所有错误响应的格式均为：</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">{</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="err">*</span><span class="w"> </span><span class="p">,</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="nt">&quot;info&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[Some message]&quot;</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>若读取数据中途抛出错误，错误响应的状态码为 <code>500 Internal Server Error</code>，code 字段为 <code>-4</code>，info 字段尽量携带错误信息。</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 用户管理">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                用户管理
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../%E9%A2%98%E5%BA%93%E4%BF%A1%E6%81%AF/" class="md-footer__link md-footer__link--next" aria-label="Next: 题库信息">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                题库信息
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 Voyager
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.498 6.186a3.02 3.02 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.02 3.02 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.02 3.02 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.02 3.02 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
